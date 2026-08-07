@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Upload Image</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <h1>Upload Image</h1>
 
     <form action="/upload" method="POST" enctype="multipart/form-data">
-
-        <input type="file" name="image">
-
-        <button>
-            Upload
-        </button>
-
+      <input type="file" name="image" />
+      <!-- <img src="/project6/uploads/image.jpg" alt="Uploaded Image"> -->
+      <button>Upload</button>
     </form>
-
-</body>
-
+   <img src="/<%= image %>" alt="Uploaded Image">
+  </body>
 </html>
